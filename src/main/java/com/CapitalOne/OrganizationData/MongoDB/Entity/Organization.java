@@ -1,6 +1,6 @@
 package com.CapitalOne.OrganizationData.MongoDB.Entity;
 
-import com.CapitalOne.OrganizationData.RelationalDB.Entity.Customer;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Id;
@@ -34,15 +34,16 @@ public class Organization {
         this.orgName = orgName;
     }
 
-    public List<Customer> getCustomer() {
-        return customer;
+    public List<CustomerMongo> getCustomerMongo() {
+        return customerMongo;
     }
 
-    public void setCustomer(List<Customer> customer) {
-        this.customer = customer;
+    public void setCustomerMongo(List<CustomerMongo> customerMongo) {
+        this.customerMongo = customerMongo;
     }
 
     public String orgName;
 
-    public List<Customer> customer;
+    @DBRef
+    public List<CustomerMongo> customerMongo;
 }

@@ -1,28 +1,29 @@
 package com.CapitalOne.OrganizationData.MongoDB.Entity;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Id;
-
 @Document
-public class Customer {
+public class CustomerMongo {
 
-    public Customer(){}
+    public CustomerMongo(){}
 
-    public Customer(String firstName, String lastName){
+    public CustomerMongo(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
     @Id
-    public int custId;
+    public int id;
+    public String firstName;
+    public String lastName;
 
     public int getId() {
-        return custId;
+        return id;
     }
 
     public void setId(int id) {
-        this.custId = id;
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -40,8 +41,4 @@ public class Customer {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    public String firstName;
-
-    public String lastName;
 }

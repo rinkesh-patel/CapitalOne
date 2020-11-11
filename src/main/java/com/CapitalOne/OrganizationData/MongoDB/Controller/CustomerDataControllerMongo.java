@@ -1,6 +1,6 @@
 package com.CapitalOne.OrganizationData.MongoDB.Controller;
 
-import com.CapitalOne.OrganizationData.MongoDB.Entity.Customer;
+import com.CapitalOne.OrganizationData.MongoDB.Entity.CustomerMongo;
 import com.CapitalOne.OrganizationData.MongoDB.Service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,17 +18,17 @@ public class CustomerDataControllerMongo {
     CustomerService customerService;
 
     @PostMapping("/setData")
-    public ResponseEntity<Customer> setData(@Valid @RequestBody Customer customer){
-        return ResponseEntity.ok(customerService.saveCustData(customer));
+    public ResponseEntity<CustomerMongo> setData(@Valid @RequestBody CustomerMongo customerMongo){
+        return ResponseEntity.ok(customerService.saveCustData(customerMongo));
     }
 
     @GetMapping("/getCust")
-    public ResponseEntity<List<Customer>> getOrg () throws  Exception {
+    public ResponseEntity<List<CustomerMongo>> getOrg () throws  Exception {
         return ResponseEntity.ok(customerService.getListOfCustomer());
     }
 
     @GetMapping("/getCust/{custId}")
-    public ResponseEntity<Optional<Customer>> getCustById (@PathVariable int custId) throws  Exception {
+    public ResponseEntity<Optional<CustomerMongo>> getCustById (@PathVariable String custId) throws  Exception {
         return ResponseEntity.ok(customerService.getCustomerById(custId));
     }
 }
