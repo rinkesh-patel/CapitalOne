@@ -1,6 +1,6 @@
-package com.CapitalOne.OrganizationData.repository;
+package com.CapitalOne.OrganizationData.RelationalDB.repository;
 
-import com.CapitalOne.OrganizationData.Entity.Organization;
+import com.CapitalOne.OrganizationData.RelationalDB.Entity.Organization;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

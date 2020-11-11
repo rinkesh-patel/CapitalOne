@@ -3,7 +3,7 @@ package com.CapitalOne.OrganizationData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import com.CapitalOne.OrganizationData.repository.OrganizationRepository;
+import com.CapitalOne.OrganizationData.RelationalDB.repository.OrganizationRepository;
 
 @SpringBootApplication
 public class OrganizationDataApplication {

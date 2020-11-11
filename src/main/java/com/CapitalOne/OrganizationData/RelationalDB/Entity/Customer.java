@@ -1,4 +1,4 @@
-package com.CapitalOne.OrganizationData.Entity;
+package com.CapitalOne.OrganizationData.RelationalDB.Entity;
 
 import lombok.Data;
 

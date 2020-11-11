@@ -1,8 +1,8 @@
-package com.CapitalOne.OrganizationData.Controller;
+package com.CapitalOne.OrganizationData.RelationalDB.Controller;
 
-import com.CapitalOne.OrganizationData.Entity.Customer;
-import com.CapitalOne.OrganizationData.Entity.Organization;
-import com.CapitalOne.OrganizationData.Service.OrganizationService;
+import com.CapitalOne.OrganizationData.RelationalDB.Entity.Customer;
+import com.CapitalOne.OrganizationData.RelationalDB.Entity.Organization;
+import com.CapitalOne.OrganizationData.RelationalDB.Service.OrganizationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

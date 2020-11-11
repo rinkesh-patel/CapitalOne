@@ -1,9 +1,9 @@
-package com.CapitalOne.OrganizationData.Service;
+package com.CapitalOne.OrganizationData.RelationalDB.Service;
 
-import com.CapitalOne.OrganizationData.Entity.Customer;
-import com.CapitalOne.OrganizationData.Entity.Organization;
-import com.CapitalOne.OrganizationData.repository.CustomerRepository;
-import com.CapitalOne.OrganizationData.repository.OrganizationRepository;
+import com.CapitalOne.OrganizationData.RelationalDB.Entity.Customer;
+import com.CapitalOne.OrganizationData.RelationalDB.Entity.Organization;
+import com.CapitalOne.OrganizationData.RelationalDB.repository.CustomerRepository;
+import com.CapitalOne.OrganizationData.RelationalDB.repository.OrganizationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

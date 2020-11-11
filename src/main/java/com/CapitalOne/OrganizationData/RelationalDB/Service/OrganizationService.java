@@ -1,7 +1,7 @@
-package com.CapitalOne.OrganizationData.Service;
+package com.CapitalOne.OrganizationData.RelationalDB.Service;
 
-import com.CapitalOne.OrganizationData.Entity.Customer;
-import com.CapitalOne.OrganizationData.Entity.Organization;
+import com.CapitalOne.OrganizationData.RelationalDB.Entity.Customer;
+import com.CapitalOne.OrganizationData.RelationalDB.Entity.Organization;
 
 import java.util.List;
 

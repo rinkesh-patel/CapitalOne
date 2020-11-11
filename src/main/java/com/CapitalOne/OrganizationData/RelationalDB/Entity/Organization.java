@@ -1,6 +1,4 @@
-package com.CapitalOne.OrganizationData.Entity;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+package com.CapitalOne.OrganizationData.RelationalDB.Entity;
 
 import javax.persistence.*;
 import java.util.List;
